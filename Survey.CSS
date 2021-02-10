@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(95deg, #43cea2, #185a9d);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.flex-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+    background: linear-gradient(95deg, #185a9d,#43cea2);
+}
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+
+.form-row > input, textarea, select {
+    flex: 2;
+}
+
+.form-row > input {
+    padding: .5em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1.5em;
+}
+
+[type="submit"] {
+    background: #185a9d;
+    color: white;
+    flex-grow: .2;
+}
+
+[type="submit"]:hover {
+    background: cyan;
+    transform: scale(1.5);
+    color: black;
+}
+

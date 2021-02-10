@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Survey.CSS">
+   <title>SurveyForm</title>
+</head>
+
+<body>
+
+   <header class="flex-header">
+
+      <h1 id="title"><u>Please fill out the survey below</u>:</h1>
+
+      <article>
+         <p id="description"><strong>Below is the form that every customer must fill out.
+            Please make sure to be as accurate as possible.</strong></p>
+      </article>
+
+   </header>
+
+   <main id="wrapper">
+
+      <form id="survey-form" target="_blank">
+
+         <ul class="flex-top">
+            <li class="form-row"><label for="name" id="name-label">Enter your name:</label>
+               <input type="text" id="name" name="personal" placeholder="Name" required>
+            </li>
+
+            <li class="form-row"><label for="email" id="email-label">Enter your email:</label>
+               <input type="email" name="personal" id="email" placeholder="Email" required>
+            </li>
+
+
+            <li class="form-row"><label for="number" id="number-label">How many years have you been driving:</label>
+               <input type="number" name="personal" id="number" min="1" max="30" placeholder="Number of years driving" required>
+            </li>
+         </ul>
+
+         <ul class="flex-mid">
+            <li class="form-row">
+               <label for="new-customer">New Customer</label>
+               <input type="radio" name="customer" id="new-customer" value="new-customer">
+
+
+               <label for="exsisting-customer">Exsisting Customer</label>
+               <input type="radio" name="customer" id="exsisting-customer" value="exsisting-customer">
+
+
+               <label for="previous-customer">Previous Customer</label>
+               <input type="radio" name="customer" id="previous-customer" value="previous-customer">
+            </li>
+
+            <li class="form-row">
+               <label for="Monday">Monday</label>
+               <input type="checkbox" name="weekday" id="Monday" value="Monday">
+
+
+               <label for="Wednesday">Wednesday</label>
+               <input type="checkbox" name="weekday" id="Wednesday" value="Tuesday">
+
+
+               <label for="Friday">Friday</label>
+               <input type="checkbox" name="weekday" id="Friday" value="Wednesday">
+            </li>
+         </ul>
+
+         <ul class="flex-inner">
+
+            <li class="form-row"><label for="dropdown">What county do you live in?</label>
+               <select name="dropdown" id="dropdown" required>
+                  <option value="" selected="selected">Select One</option>
+                  <option value="Kings">Kings</option>
+                  <option value="Queens">Queens</option>
+                  <option value="Nassau">Nassau</option>
+                  <option value="Suffolk">Suffolk</option>
+               </select>
+            </li>
+
+            <li class="form-row"><label for="more-information">Additional Information</label>
+               <textarea name="textarea" id="text-area" rows="6" placeholder="Type any additional information you have here"></textarea>
+            </li>
+
+            <li class="row"><label for="submit"></label>
+               <input type="submit" value="Submit" id="submit">
+            </li>
+         </ul>
+
+      </form>
+
+   </main>
+</body>
+</html>
